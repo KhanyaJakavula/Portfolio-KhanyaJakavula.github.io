@@ -1,0 +1,185 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8fc;
+    color: #202b3c;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+header {
+    background: #10243e;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #67afd3;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #10243e, #17658a);
+    color: white;
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #e0eaf3;
+}
+
+.hero span {
+    color: #67afd3;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #67afd3;
+    color: #10243e;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #10243e;
+    font-size: 30px;
+}
+
+.section-title p {
+    color: #68778a;
+}
+
+/* ABOUT */
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ASSESSMENT CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e0e8f0;
+    box-shadow: 0 5px 18px rgba(16, 36, 62, 0.05);
+}
+
+.card h3 {
+    color: #17658a;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #17658a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* CONTENT SECTIONS */
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 950px;
+    margin: auto;
+    border: 1px solid #e0e8f0;
+}
+
+.content-box h3 {
+    color: #17658a;
+    margin: 20px 0 10px;
+}
+
+.content-box p {
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    background: #10243e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
